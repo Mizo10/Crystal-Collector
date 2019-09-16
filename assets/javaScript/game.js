@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var randomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
     console.log("random number: " + randomNumber);
-    $(".randomNumber").html(randomNumber);
+    $(".randomNumber").html("Number to Match: " + randomNumber);
 
 
     var crystal1randomNumber = Math.floor(Math.random() * (3 - 1 + 1) + 1);
@@ -31,7 +31,7 @@ $(document).ready(function () {
         $(".randomNumber").html(randomNumber);
 
         score = 0;
-        $('.totalScore').html(score);
+        $('.totalScore').html("Your total so far: " + score);
 
         var crystal1randomNumber = Math.floor(Math.random() * (3 - 1 + 1) + 1);
         console.log("crystal1: " + crystal1randomNumber);
@@ -51,11 +51,10 @@ $(document).ready(function () {
 
         $("img").on("click", function () {
             var newScore = score += parseInt($(this).attr("value"));
-            $('.totalScore').html(newScore);
+            $('.totalScore').html("Your total so far: " + newScore);
 
             if (newScore === randomNumber) {
                 wins++;
-                console.log("wins: " + wins)
                 $("#wins").html("Wins: " + wins);
                 reset ();
             }
@@ -69,7 +68,7 @@ $(document).ready(function () {
 
     $("img").on("click", function () {
         var newScore = score += parseInt($(this).attr("value"));
-        $('.totalScore').html(newScore);
+        $('.totalScore').html("Your total so far: " + newScore);
 
         if (newScore === randomNumber) {
             wins++;
