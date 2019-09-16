@@ -28,7 +28,7 @@ $(document).ready(function () {
     function reset() {
         var randomNumber = Math.floor(Math.random() * (120 - 19 + 1) + 19);
         console.log("random number: " + randomNumber);
-        $(".randomNumber").html(randomNumber);
+        $(".randomNumber").html("Number to Match: " + randomNumber);
 
         score = 0;
         $('.totalScore').html("Your total so far: " + score);
@@ -45,7 +45,7 @@ $(document).ready(function () {
         console.log("crystal3: " + crystal3randomNumber);
         $("#img3").html("<img src=" + "assets/images/image3.jpg" + " value=" + crystal3randomNumber + ">");
 
-        var crystal4randomNumber = Math.floor(Math.random() * (12 - 10 + 1) + 8);
+        var crystal4randomNumber = Math.floor(Math.random() * (12 - 10 + 1) + 10);
         console.log("crystal4: " + crystal4randomNumber);
         $("#img4").html("<img src=" + "assets/images/image4.jpg" + " value=" + crystal4randomNumber + ">");
 

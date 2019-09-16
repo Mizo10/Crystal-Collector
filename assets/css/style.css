@@ -1,4 +1,32 @@
+body {
+    background-image: url(../images/wallpaper.jpg);
+    background-size: 100%;
+}
 .Title{
-    color: red;
+    color: red;  
     text-align: center;
+}
+
+.instructions{
+    color: white;
+    margin: 30px;
+}
+
+.randomNumber{
+    color:black;
+    margin: 30px;
+    font-size: 30px;
+
+}
+
+.scoreBoard{
+    color:black;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.totalScore{
+    color: black;
+    margin: 30px;
+    font-size: 25px;
 }
